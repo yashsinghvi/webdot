@@ -37,10 +37,10 @@
           </h1>
           <nav>
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#banner">HOME</a></li>
+              <li><a href="#hire_me">SERVICES</a></li>
+              <li><a href="#about_me">ABOUT US</a></li>
+              <li><a href="#get_quote">CONTACT US</a></li>
             </ul>
           </nav>
           <div class="header-button"><a href="mainto:yashjain9542@gmail.com">Get A Quote</a></div>
@@ -183,5 +183,14 @@
       </div>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll('header nav li a').forEach(nav => {
+    nav.addEventListener('click',function(e){
+      e.preventDefault();
+      let id = nav.getAttribute('href');
+      document.querySelector(id).scrollIntoView({behavior: "smooth"});
+    })
+  })
+  </script>
 </body>
 </html>
