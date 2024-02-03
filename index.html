@@ -24,27 +24,27 @@
   <meta name="robots" content="index,follow">
   <link href="style.css" rel="stylesheet">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBCRS9G6HV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RBCRS9G6HV');
-</script>
-<script type="application/ld+json">
-  {
-  "@context": "https://schema.org/",
-  "@type": "Organization",
-  "name": "Shopify Experts Developers",
-  "url": "https://webdotinfotech.com/",
-  "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "ratingCount": "1200"
-  }
-  }
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBCRS9G6HV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RBCRS9G6HV');
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Organization",
+      "name": "Shopify Experts Developers",
+      "url": "https://webdotinfotech.com/",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "1200"
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -60,7 +60,7 @@
               <li><a href="#banner">HOME</a></li>
               <li><a href="#hire_me">SERVICES</a></li>
               <li><a href="#about_me">ABOUT US</a></li>
-              <li><a href="#footer">CONTACT US</a></li>
+              <li><a href="pages/contact-us">CONTACT US</a></li>
             </ul>
           </nav>
           <div class="header-button"><a href="mainto:yashjain9542@gmail.com">Get A Quote</a></div>
@@ -205,13 +205,14 @@
   </div>
   <script>
     document.querySelectorAll('header nav li a').forEach(nav => {
-    nav.addEventListener('click',function(e){
-      e.preventDefault();
-      let id = nav.getAttribute('href');
-      document.querySelector(id).scrollIntoView({behavior: "smooth"});
+      if(nav.href.includes('#')){
+        nav.addEventListener('click',function(e){
+          e.preventDefault();
+          let id = nav.getAttribute('href');
+          document.querySelector(id).scrollIntoView({behavior: "smooth"});
+        })
+      } 
     })
-  })
-  
   </script>
 </body>
 </html>
