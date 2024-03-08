@@ -104,6 +104,10 @@ img {
 .btn:hover {
   background: #f3d97a;
 }
+.btn.btn-secondary {
+  background: #2c2927;
+  color: #fff;
+}
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -127,7 +131,8 @@ header {
   top: 0;
   z-index: 9;
 }
-.header-inner-wrap h1 {
+.header-inner-wrap h1,
+.header-inner-wrap h2.logo {
   margin: 0;
   padding: 0;
 }
@@ -1064,6 +1069,25 @@ footer .footer-form {
   .contact-form form textarea {
     height: 90px;
   }
+}
+/*----index----*/
+.inner-page #comming-soon {
+  padding: 90px 0;
+}
+.inner-page  header {
+  position: relative;
+  background: #2c2927;
+}
+.comming-soon-content {
+  color: #2c2927;
+  text-align: center;
+}
+.comming-soon-content h2 {
+  font-size: 85px;
+}
+.comming-soon-content p {
+  font-size: 24px;
+  margin: 20px 0 40px;
 }
 /*font-family: 'DM Serif Display', serif;
 font-family: 'Montserrat', sans-serif;
