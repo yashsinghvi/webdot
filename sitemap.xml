@@ -2,10 +2,14 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://webdotinfotech.com/</loc>
-    <lastmod>2024-02-03T06:03:51+00:00</lastmod>
+    <lastmod>2024-03-09T06:03:51+00:00</lastmod>
   </url>
   <url>
-    <loc>https://webdotinfotech.com/pages/contact-us</loc>
-    <lastmod>2024-02-03T06:03:51+00:00</lastmod>
-  </url> 
+    <loc>https://webdotinfotech.com/pages/contact-us.html</loc>
+    <lastmod>2024-03-09T06:03:51+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://webdotinfotech.com/pages/404.html</loc>
+    <lastmod>2024-03-09T06:03:51+00:00</lastmod>
+  </url>
 </urlset>
