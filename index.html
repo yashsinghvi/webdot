@@ -69,7 +69,15 @@
     </header>
     <div id="main">
       <section id="banner">
-        <img src="/image/hero-bg.jpg" alt="Don't Just Build a Store, Build a Brand" title="Don't Just Build a Store, Build a Brand" height="1027" width="1920"/>
+        <picture>
+          <source media="(max-width:3000px)" srcset="/image/hero-bg-3000_x_1999.jpg">
+          <source media="(max-width:2000px)" srcset="/image/hero-bg-2000_x_1333.jpg">
+          <source media="(max-width:650px)" srcset="/image/hero-bg-1440_x_959.jpg">
+          <source media="(max-width:1200px)" srcset="/image/hero-bg-1200_x_799.jpg">
+          <source media="(max-width:992px)" srcset="/image/hero-bg-992_x_660.jpg">
+          <source media="(max-width:768px)" srcset="/image/hero-bg-768_x_511.jpg">
+          <img src="/image/hero-bg.jpg" alt="Don't Just Build a Store, Build a Brand" title="Don't Just Build a Store, Build a Brand" height="1027" width="1920">
+        </picture>
         <div class="container">
           <div class="banner-content">
             <h2>Don't Just Build a Store, Build a Brand</h2>
