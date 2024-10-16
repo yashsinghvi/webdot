@@ -1096,6 +1096,59 @@ footer .footer-form {
   font-size: 24px;
   margin: 20px 0 40px;
 }
+/*----about page start here */
+#about-main .about-main-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  place-items: center;
+}
+.about-main-image h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+.about-main-image a.btn {
+  background: #2c2927;
+  color: #fff;
+}
+.about-main-image a.btn:hover {
+  color: #2c2927;
+  background: #f3d97a;
+}
+.about-main-row + .about-main-row {
+  margin-top: 100px;
+}
+#about-main .about-main-row:nth-child(2n+2) .about-main-image {
+  order: 2;
+}
+@media only screen and (max-width: 991px){
+  #about-main .about-main-row {
+    grid-column-gap: 25px;
+  }
+  .about-main-image {
+    place-self: stretch;
+    overflow: hidden;
+  }
+  .about-main-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .about-main-row + .about-main-row {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  #about-main .about-main-row {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+  #about-main .about-main-row:nth-child(2n+2) .about-main-image {
+    order: unset;
+  }
+}
+/*----about page ends here */
 /*font-family: 'DM Serif Display', serif;
 font-family: 'Montserrat', sans-serif;
 */
